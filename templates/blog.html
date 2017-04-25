@@ -9,6 +9,7 @@
 <h2><a href="/blog/{{ post.key().id() }}">{{ post.title }}</a></h2>
 <p>{{ post.body }}</p>
 <!-- TODO add author w/ link to author's blog page -->
+<h4>written by <a href='/blog/{{ post.author.username }}'>{{ post.author.username }}</a></h4>
 
 {% endfor %}
 
